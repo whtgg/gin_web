@@ -1,6 +1,3 @@
-# dms
-Big data content management system.
-
 ## docs
 https://gin-gonic.com/zh-cn/docs/examples/bind-body-into-dirrerent-structs/
 
