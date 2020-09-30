@@ -1,0 +1,83 @@
+.header,
+.list .list_left .list_box .list_box_l .list_menu .c1 a,
+.widget .widget-con a:hover,
+.one .one-left .box .tb-btn a.active,
+.one .one-right .item .i .c,
+.two .two-right .two-right-title,
+.new_news .scrollbar .item:hover .dot,
+.three .three-right .hotrank .hotrank-box .list_round li:hover i,
+.more:hover,
+.article .article_left .contenttitle .tags .active,
+.article .article_left .contentbox .show_shang a,
+.article .article_left .contenttitle .tags a:hover,
+.widget .widget-con .active,
+.search-list .list_left .more:hover,
+.tags-list .list_left .more:hover
+{
+    background-color: #00c250;
+}
+
+
+.header,
+.list .list_left .list_box .list_box_l .list_menu .on, .list .list_left .list_box .list_box_l .list_menu a:hover,
+.list .list_left .list_box .list_box_r .item .tit a:hover,
+.list .list_left .list_box .list_box_r .item .other .other1 a,
+.recommend ul li a:hover p,
+.selected ul li a:hover,
+.hotpicture ul li a:hover .left-tit,
+.new_news .scrollbar .item .piece .title a:hover,
+.two .two-left .two-left-title p a:hover,
+.two .two-left .two-left-box2 .items li:hover a,
+.three .three-left .three-left-title p a:hover,
+.three .three-left .three-left-box .txt_new .item .title a:hover,
+.three .three-right .hotrank a:hover,
+.pages a:hover,
+.article .article_left .sub_left .show_tool .show_cat:hover,
+.article .article_left .contentbox .xiangguan .item .info1 a:hover,
+.article .article_left .contentbox .xiangguan .item .info1 .other .other1 a,
+.article .article_left .contentbox .xiangguan .xiangguan_title .key a:hover,
+.article .article_left .contentbox .page_pre_next a:hover,
+.search-list .list_left .item .info1 a:hover,
+.search-list .list_left .item .other .other1 a{
+    color:#00c250;
+}
+
+
+
+
+.list .list_left .list_box .list_box_l .list_menu .c1 a,
+.list .list_left .list_box .list_box_r .item .other .other1 a,
+.widget .widget-con a:hover,
+.pages a:hover,
+.article .article_left .contenttitle .tags .active,
+.article .article_left .contentbox .xiangguan .item .info1 .other .other1 a,
+.article .article_left .contenttitle .tags a:hover,
+.search-list .list_left .item .other .other1 a,
+.widget .widget-con .active{
+    border:1px solid #00c250;
+}
+
+.three .three-right .hotrank .hotrank-box .tab span:hover, .three .three-right .hotrank .hotrank-box .tab span.cur{
+    color: #009d41;
+    border-bottom-color: #009d41;
+}
+
+.nav_more:hover .nav_sel a:hover{
+    background-color: #70db80;
+}
+
+.list .list_left .list_box .list_box_l .list_menu .on, .list .list_left .list_box .list_box_l .list_menu a:hover{
+    background-color: #f1fff7;
+}
+
+.sousuo_title{
+    background: url(../../images/search-green.png) no-repeat left 0;
+}
+
+.goto_top a{
+    background: #fff url(../../images/gotop-green.png) no-repeat scroll 0 0;
+}
+
+#search .sbt:hover{
+    background: #00c250 url(../../images/small_search.png) no-repeat 10px -20px;
+}

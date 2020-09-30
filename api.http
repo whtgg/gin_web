@@ -1,0 +1,101 @@
+### 默认首页
+GET http://localhost:8080/
+User-Token: {{userToken}}
+
+
+
+### 登录接口
+POST http://localhost:8080/api/v1/login
+Content-Type: application/x-www-form-urlencoded
+
+login_name=admin&login_pwd=asd..123
+
+
+
+### 获取所属网站列表
+GET http://localhost:8080/api/v1/sites?page_size=20&page_no=1
+User-Token: {{userToken}}
+
+
+
+### 编辑站点信息  root:qwe..123@tcp(127.0.0.1:3357)/test?charset=utf8mb4&parseTime=True&loc=Local
+POST http://localhost:8080/api/v1/sites
+Content-Type: application/x-www-form-urlencoded
+User-Token: {{userToken}}
+
+phone=134681862&title=onechain222&id=1&db=root:qwe..123@tcp(127.0.0.1:3357)/test?charset=utf8mb4
+
+
+
+### 切换站点
+POST http://localhost:8080/api/v1/sites/choice
+Content-Type: application/x-www-form-urlencoded
+User-Token: {{userToken}}
+
+site_id=1
+
+
+
+### 文章列表接口
+GET http://localhost:8080/api/v1/articles
+User-Token: {{userToken}}
+
+
+
+### 文章编辑
+POST http://localhost:8080/api/v1/articles
+Content-Type: application/x-www-form-urlencoded
+User-Token: {{userToken}}
+
+keywords=134681862&title=onechain&id=1
+
+
+
+### 栏目列表
+GET http://localhost:8080/api/v1/category
+User-Token: {{userToken}}
+
+
+
+### 编辑栏目
+POST http://localhost:8080/api/v1/category
+Content-Type: application/x-www-form-urlencoded
+User-Token: {{userToken}}
+
+keywords=134681862&title=onechain&id=1
+
+
+
+### 词库列表
+GET http://localhost:8080/api/v1/tags
+User-Token: {{userToken}}
+
+
+
+### 词库编辑
+POST http://localhost:8080/api/v1/tags
+Content-Type: application/x-www-form-urlencoded
+User-Token: {{userToken}}
+
+tag=中国,日本,美国,中国
+
+
+
+### 词库倒入
+POST http://localhost:8080/api/v1/import
+Content-Type: multipart/form-data
+User-Token: {{userToken}}
+
+file=
+
+
+
+### 上传图片
+POST http://localhost:8080/api/v1/upload
+Content-Type: multipart/form-data
+User-Token: {{userToken}}
+
+file=
+
+
+###

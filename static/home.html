@@ -1,0 +1,729 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="applicable-device" content="pc">
+    <title>首页_搜集天下财经</title>
+    <meta name="keywords" content="财经">
+    <meta name="description" content="搜集最新财经新闻、财经资讯及实用的财经知识，内容覆盖股票、基金、期货、外汇、债券、保险、银行、黄金、理财等，为您推荐最佳的投资理财和金融管理方案。">
+
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/less.css">
+    <link rel="stylesheet" type="text/css" href="css/skin/skin_0.css" id="cssfile">
+
+
+    <script src="js/jquery-3.2.1.min.js" charset="utf-8"></script>
+
+
+
+</head>
+
+<body>
+    <div class="bg3">
+        <div id="top">
+            <div class="left"><a href="#" target="_blank">新浪微博</a><i>|</i><a href="#" target="_blank">腾讯微博</a><i>|</i><a
+                    href="#" target="_blank">股市行情</a><i>|</i><a href="#" target="_blank">专题</a><i>|</i><a href="#"
+                    target="_blank">财经百科</a>
+            </div>
+            <a class="right top_load" href="#" target="_blank"><em class="appicon"></em>APP下载</a>
+            <div class="right">
+                <div class="color-select" id="skin">
+                    <i>主题选择:</i>
+                    <span id="skin_0" class="blue active">蓝色<em></em></span>
+                    <span id="skin_1" class="red">红色<em></em></span>
+                    <span id="skin_2" class="green">绿色<em></em></span>
+                    <span id="skin_3" class="yellow">黄色<em></em></span>
+                    <span id="skin_4" class="cyanblue">青色<em></em></span>
+                </div>
+                <div class="time" id="time"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="w1200" style="position:relative;">
+            <a href="#" class="logo"><img src="images/logo.png" height="43" width="147" alt="logo"></a>
+            <ul class="nav left">
+                <li><a href="home.html">首页</a></li>
+                <li><a href="list.html" target="_blank">财经</a></li>
+                <li><a href="list.html" target="_blank">股票</a></li>
+                <li><a href="list.html" target="_blank">理财</a></li>
+                <li><a href="list.html" target="_blank">基金</a></li>
+                <li><a href="list.html" target="_blank">外汇</a></li>
+                <li><a href="list.html" target="_blank">期货</a></li>
+                <li><a href="list.html" target="_blank">黄金</a></li>
+                <li class="nav_more">
+                    <a href="#">更多+</a>
+                    <div class="nav_sel">
+                        <i class="triangle"></i>
+                        <ul>
+                            <li><a href="list.html" target="_blank">房产</a></li>
+                            <li><a href="list.html" target="_blank">投资</a></li>
+                            <li><a href="list.html" target="_blank">商业</a></li>
+                            <li><a href="list.html" target="_blank">消费</a></li>
+                            <li><a href="list.html" target="_blank">科技</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="list.html" target="_blank">财经学堂</a></li>
+            </ul>
+            <div class="contribute"><a href="#" onclick="return showpopit();">投稿</a></div>
+            <div id="search">
+                <form role="search" method="post" action="search.html" onSubmit="return checkinput()" target="_blank">
+                    <input maxlength="30" class="txt" placeholder="输入搜索关键词" name="keyboard" id="search-input">
+                    <input type="hidden" name="show" value="title">
+                    <input type="hidden" name="tempid" value="1">
+                    <input type="hidden" name="tbname" value="news">
+                    <button type="submit" class="sbt"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="index">
+        <div class="one">
+            <div class="one-left">
+                <div class="carousel">
+                    <div class="box banner">
+                        <ul class="img-list">
+                            <li>
+                                <a target="_blank" href="list-con.html">
+                                    <img src="images/01fe3df2686586462c1c138831ae3250.jpg" alt="国际油价暴跌更适合中国加大原油储备">
+                                    <div class="carousel-bottom">
+                                        <p class="title">国际油价暴跌更适合中国加大原油储备</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="list-con.html">
+                                    <img src="images/2de2fe87c85033f56959bbab2964d88f.jpg"
+                                        alt="神州租车(0699.HK)港服复牌日涨幅超30%">
+                                    <div class="carousel-bottom">
+                                        <p class="title">神州租车(0699.HK)港服复牌日涨幅超30%</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="list-con.html">
+                                    <img src="images/d8f511f04b86b69d8a98fe0c518d958a.jpg" alt="中国金融改革开放跑出“新速度”">
+                                    <div class="carousel-bottom">
+                                        <p class="title">中国金融改革开放跑出“新速度”</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="list-con.html">
+                                    <img src="images/578792375100df095fb789d2cc94fb7b.jpg"
+                                        alt="2019年上半年福建省进出口总值快速增长6.8%">
+                                    <div class="carousel-bottom">
+                                        <p class="title">2019年上半年福建省进出口总值快速增长6.8%</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="list-con.html">
+                                    <img src="images/4231cefb6d272bdedff038bfd9a60fea.jpg"
+                                        alt="财政部最新数据显示：上半年国企利润同比增长7.2%">
+                                    <div class="carousel-bottom">
+                                        <p class="title">财政部最新数据显示：上半年国企利润同比增长7.2%</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="list-con.html">
+                                    <img src="images/859a6e79803dbc725fc6391ba8527dab.jpg" alt="人民日报署名文章：外贸发展有韧劲有后劲">
+                                    <div class="carousel-bottom">
+                                        <p class="title">人民日报署名文章：外贸发展有韧劲有后劲</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="one-right">
+                <div class="pic-items">
+                    <div class="item">
+                        <a href="list-con.html" target="_blank"><img src="images/8b076e439a7130066a5715d0266b33e9.jpg"
+                                alt="商务部落实稳外贸要求：继续降低进口关税总水平">
+                            <div class="i">
+                                <div class="b">
+                                    <div class="c">国内经济</div>
+                                    <div class="t">商务部落实稳外贸要求：继续降低进口关税总水平</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="list-con.html" target="_blank"><img src="images/971c81d95bc030b9b069225db9af9585.jpg"
+                                alt="飞鹤乳业研发占营收1% 营销费37亿占营收三成">
+                            <div class="i">
+                                <div class="b">
+                                    <div class="c">产业公司</div>
+                                    <div class="t">飞鹤乳业研发占营收1% 营销费37亿占营收三成</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="list-con.html" target="_blank"><img src="images/54591890581f7e3c1694409e69e56a83.jpg"
+                                alt="中国将对原产欧日韩印的进口不锈钢产品征反倾销税">
+                            <div class="i">
+                                <div class="b">
+                                    <div class="c">国际经济</div>
+                                    <div class="t">中国将对原产欧日韩印的进口不锈钢产品征反倾销税</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="list-con.html" target="_blank"><img src="images/08087d6f3a4110658b4ee60b506c553e.jpg"
+                                alt="中国公司在《财富》世界500强排行榜中数量首超美国">
+                            <div class="i">
+                                <div class="b">
+                                    <div class="c">宏观经济</div>
+                                    <div class="t">中国公司在《财富》世界500强排行榜中数量首超美国</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="two">
+            <div class="two-left">
+                <div class="two-left-title">
+                    <h2>新闻精选</h2>
+                    <p><a href="#" target="_blank">国际黄金</a> <a href="#" target="_blank">石油</a> <a href="#"
+                            target="_blank">金价</a> <a href="#" target="_blank">汇市</a> <a href="#" target="_blank">美元</a>
+                        <a href="#" target="_blank">消费股</a> <a href="#" target="_blank">银行</a> <a href="#"
+                            target="_blank">央行</a> <a href="#" target="_blank">国债</a></p>
+                </div>
+                <div class="two-left-box1">
+                    <div class="tab-pic">
+                        <a href="#" target="_blank">
+                            <div class="img-wrap"><img src="images/8f3e7a201541fe88024dd7c365488c40.jpg"
+                                    alt="摩根士丹利经济学家邢自强：中国城市化2.0将成经济发力点"></div>
+                            <div class="title">
+                                <span class="line">|</span>
+                                <p>摩根士丹利经济学家邢自强：中国城市化2.0将成经济发力点</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="pic-items">
+                        <a class="pic-item" href="#" target="_blank">
+                            <span class="shade"></span>
+                            <img src="images/859a6e79803dbc725fc6391ba8527dab.jpg" alt="人民日报署名文章：外贸发展有韧劲有后劲">
+                            <div class="pic-title">
+                                <p>人民日报署名文章：外贸发展有韧劲有后劲</p>
+                            </div>
+                        </a><a class="pic-item" href="#" target="_blank">
+                            <span class="shade"></span>
+                            <img src="images/4231cefb6d272bdedff038bfd9a60fea.jpg" alt="财政部最新数据显示：上半年国企利润同比增长7.2%">
+                            <div class="pic-title">
+                                <p>财政部最新数据显示：上半年国企利润同比增长7.2%</p>
+                            </div>
+                        </a> </div>
+                </div>
+                <div class="two-left-box2">
+                    <div class="items">
+                        <ul>
+                            <li class="items-title"><a href="biaoqian.html" target="_blank">2019年上半年福建省进出口总值快速增长6.8%</a>
+                            </li>
+                            <li><a href="biaoqian.html" target="_blank">央行印发金融科技三年规划 2021年实现金融科技深度融合</a></li>
+                            <li><a href="biaoqian.html" target="_blank">比特币自去年10月26日以来首次回10000美元大关</a></li>
+                            <li><a href="biaoqian.html" target="_blank">中国金融改革开放跑出“新速度”</a></li>
+                            <li><a href="biaoqian.html" target="_blank">科创板为推行创业板注册制发挥试验田作用</a></li>
+                            <li><a href="biaoqian.html" target="_blank">飞鹤乳业研发占营收1% 营销费37亿占营收三成</a></li>
+                            <li><a href="biaoqian.html" target="_blank">商务部落实稳外贸要求：继续降低进口关税总水平</a></li>
+                            <li><a href="biaoqian.html" target="_blank">沪深融券余额大幅增长 私募机构尝试多空策略</a></li>
+                            <li><a href="biaoqian.html" target="_blank">人民日报：当前消费形势有力拉动“基本盘”</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="two-right">
+                <div class="two-right-title">
+                    <h3 class="name">快讯<div class="more">最新的财经新闻资讯</div>
+                    </h3>
+                </div>
+                <div class="new_news">
+                    <div class="scrollbar">
+                        <div class="item">
+                            <div class="dot"></div>
+                            <div class="piece">
+                                <div class="title"><a href="#" target="_blank">疫情刺激避险投资需求 黄金白银期货仍有上涨空间</a></div>
+                                <div class="name">期市分析 2020-06-03</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dot"></div>
+                            <div class="piece">
+                                <div class="title"><a href="#" target="_blank">英伦金融：中美担忧缓和股油上涨 关注加拿大利率决议及多国PMI</a></div>
+                                <div class="name">期货机构 2020-06-03</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dot"></div>
+                            <div class="piece">
+                                <div class="title"><a href="#" target="_blank">同事玩闹间摔碎两万多的玉镯却连三两千都不肯赔</a></div>
+                                <div class="name">玉石 2020-06-01</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dot"></div>
+                            <div class="piece">
+                                <div class="title"><a href="#" target="_blank">北京等多地多支制造业“转型升级基金”正在发力</a></div>
+                                <div class="name">基金动态 2020-05-31</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dot"></div>
+                            <div class="piece">
+                                <div class="title"><a href="#" target="_blank">中银香港原副董事长高迎欣空降民生银行任党委书记</a></div>
+                                <div class="name">财经杂谈 2020-05-31</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dot"></div>
+                            <div class="piece">
+                                <div class="title"><a href="#" target="_blank">美国人终于开始存钱了 3月份美国储蓄率上升5.1%</a></div>
+                                <div class="name">银行理财 2020-05-31</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dot"></div>
+                            <div class="piece">
+                                <div class="title"><a href="#" target="_blank">12家外资再保险公司今年一季度收入达到2017年以来高点</a></div>
+                                <div class="name">金融市场 2020-05-31</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dot"></div>
+                            <div class="piece">
+                                <div class="title"><a href="#" target="_blank">美联储主席鲍威尔说将启动“大众企业贷款计划”</a></div>
+                                <div class="name">美股 2020-05-30</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dot"></div>
+                            <div class="piece">
+                                <div class="title"><a href="#" target="_blank">南下资金的持续增加 港股下行风险仍未解除</a></div>
+                                <div class="name">港股 2020-05-30</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dot"></div>
+                            <div class="piece">
+                                <div class="title"><a href="#" target="_blank">大学生怎么理财？大学生理财规划的重点是什么？</a></div>
+                                <div class="name">理财规划 2020-05-26</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dot"></div>
+                            <div class="piece">
+                                <div class="title"><a href="#" target="_blank">职场新人什么时候进行理财规划？</a></div>
+                                <div class="name">理财规划 2020-05-26</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dot"></div>
+                            <div class="piece">
+                                <div class="title"><a href="#" target="_blank">美国工业和安全局正式升级对华为的限制措施</a></div>
+                                <div class="name">商业报道 2020-05-16</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dot"></div>
+                            <div class="piece">
+                                <div class="title"><a href="#" target="_blank">周小川：金融市场需要更好地与财政政策相对接</a></div>
+                                <div class="name">金融市场 2020-05-16</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dot"></div>
+                            <div class="piece">
+                                <div class="title"><a href="#" target="_blank">医药板块22只医药股创历史新高 机构看好细分领域优质品种</a></div>
+                                <div class="name">个股 2020-05-13</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dot"></div>
+                            <div class="piece">
+                                <div class="title"><a href="#" target="_blank">近期部分城市楼市成交活跃 但市场普涨的可能性很低</a></div>
+                                <div class="name">楼市评论 2020-05-13</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dot"></div>
+                            <div class="piece">
+                                <div class="title"><a href="#" target="_blank">借助学区房升温的楼市究竟还能持续多久？</a></div>
+                                <div class="name">楼市评论 2020-05-13</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dot"></div>
+                            <div class="piece">
+                                <div class="title"><a href="#" target="_blank">瑞幸咖啡终止公司创始人钱治亚CEO职务</a></div>
+                                <div class="name">商业报道 2020-05-13</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dot"></div>
+                            <div class="piece">
+                                <div class="title"><a href="#" target="_blank">美股开盘航空股和石油股狂跌 股神巴菲特承认看错航空公司</a></div>
+                                <div class="name">美股 2020-05-04</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dot"></div>
+                            <div class="piece">
+                                <div class="title"><a href="#" target="_blank">新三板挂牌公司中有12家公司去年净利增长超100倍</a></div>
+                                <div class="name">新三板 2020-05-04</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dot"></div>
+                            <div class="piece">
+                                <div class="title"><a href="#" target="_blank">珠江人寿不动产配置比例超出监管红线被银保监会点名</a></div>
+                                <div class="name">金融市场 2020-04-28</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ad_mt50"><a rel="nofollow" href="#" target="_blank"><img alt="广告" src="images/120090-1.jpg"></a>
+        </div>
+        <div class="three">
+            <div class="three-left">
+                <div class="three-left-title">
+                    <h2>财经学堂</h2>
+                    <p><a href="#">股票知识</a><a href="#">黄金知识</a><a href="#">炒房知识</a><a href="#">外汇知识</a><a
+                            href="#">期货知识</a><a href="#">基金知识</a><a href="#">白银知识</a><a href="#">金融知识</a><a href="#"
+                            class="title-more"></a></p>
+                </div>
+                <div class="three-left-box">
+                    <div class="pic-content">
+                        <a class="pic-item" href="#" target="_blank">
+                            <span class="shade"></span>
+                            <img src="images/24999463b3a14f3f5283fb16bd5cb5c5.jpg" alt="纸黄金投资前该做的准备有哪些？">
+                            <div class="pic-title">
+                                <p>纸黄金投资前该做的准备有哪些？</p>
+                            </div>
+                        </a><a class="pic-item" href="#" target="_blank">
+                            <span class="shade"></span>
+                            <img src="images/833c72bac0aed9d650c081e71d446fe8.jpg" alt="美联储为何降息？美联储降息利好股市吗？">
+                            <div class="pic-title">
+                                <p>美联储为何降息？美联储降息利好股市吗？</p>
+                            </div>
+                        </a><a class="pic-item" href="#" target="_blank">
+                            <span class="shade"></span>
+                            <img src="images/df643bf061536af3a7ecd2c75893b954.jpg" alt="外汇保证金交易具有什么样的优势？">
+                            <div class="pic-title">
+                                <p>外汇保证金交易具有什么样的优势？</p>
+                            </div>
+                        </a><a class="pic-item" href="#" target="_blank">
+                            <span class="shade"></span>
+                            <img src="images/a6d0aaff5d1363d2121835a3ebe04f3b.jpg" alt="外汇储备是什么意思有什么用处？">
+                            <div class="pic-title">
+                                <p>外汇储备是什么意思有什么用处？</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="txt_new">
+                        <div class="item">
+                            <div class="title"><a href="#" target="_blank">炒黄金遭遇成交密集区如何做单？</a></div>
+                        </div>
+                        <div class="item">
+                            <div class="title"><a href="#" target="_blank">炒黄金中如何管理仓位呢？</a></div>
+                        </div>
+                        <div class="item">
+                            <div class="title"><a href="#" target="_blank">炒黄金有哪些禁忌？</a></div>
+                        </div>
+                        <div class="item">
+                            <div class="title"><a href="#" target="_blank">炒黄金有哪些止损陷阱？</a></div>
+                        </div>
+                        <div class="item">
+                            <div class="title"><a href="#" target="_blank">炒黄金怎样才能避免跟风操作呢？</a></div>
+                        </div>
+                        <div class="item">
+                            <div class="title"><a href="#" target="_blank">炒黄金哪些方法可以减少亏损？</a></div>
+                        </div>
+                        <div class="item">
+                            <div class="title"><a href="#" target="_blank">炒黄金的风险率怎么计算</a></div>
+                        </div>
+                        <div class="item">
+                            <div class="title"><a href="#" target="_blank">炒黄金如何利用相反理论？</a></div>
+                        </div>
+                        <div class="item">
+                            <div class="title"><a href="#" target="_blank">炒黄金如何应对主动和被动性解套</a></div>
+                        </div>
+                        <div class="item">
+                            <div class="title"><a href="#" target="_blank">炒黄金如何识破盘整？</a></div>
+                        </div>
+                        <div class="item">
+                            <div class="title"><a href="#" target="_blank">炒黄金中有哪些发现缺口的方法？</a></div>
+                        </div>
+                        <div class="item">
+                            <div class="title"><a href="#" target="_blank">炒黄金常见风险有哪些？</a></div>
+                        </div>
+                        <div class="item">
+                            <div class="title"><a href="#" target="_blank">炒黄金如何看待技术分析？</a></div>
+                        </div>
+                        <div class="item">
+                            <div class="title"><a href="#" target="_blank">炒黄金如何判断黄金走势？</a></div>
+                        </div>
+                        <div class="item">
+                            <div class="title"><a href="#" target="_blank">炒黄金入门该做什么？</a></div>
+                        </div>
+                        <div class="item">
+                            <div class="title"><a href="#" target="_blank">炒黄金为何顺势交易还是亏损？</a></div>
+                        </div>
+                        <div class="item">
+                            <div class="title"><a href="#" target="_blank">贵金属投资：炒黄金入门知识</a></div>
+                        </div>
+                        <div class="item">
+                            <div class="title"><a href="#" target="_blank">炒黄金时需要遵循哪些原则？</a></div>
+                        </div>
+                        <div class="item">
+                            <div class="title"><a href="#" target="_blank">黄金抄底有哪些实用技巧？</a></div>
+                        </div>
+                        <div class="item">
+                            <div class="title"><a href="#" target="_blank">中国黄金投资是否是骗局？</a></div>
+                        </div>
+                        <div class="item">
+                            <div class="title"><a href="#" target="_blank">炒黄金时K线图中有哪些买入信号？</a></div>
+                        </div>
+                        <div class="item">
+                            <div class="title"><a href="#" target="_blank">股市底部有哪些操作技巧？</a></div>
+                        </div>
+                        <div class="item">
+                            <div class="title"><a href="#" target="_blank">招股说明书是什么？招股说明书包括哪些内容？</a></div>
+                        </div>
+                        <div class="item">
+                            <div class="title"><a href="#" target="_blank">如何从成交量的变化预测股价的动向？</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="three-right">
+                <div class="hotrank">
+                    <div class="hotrank-box">
+                        <div class="tab" id="div_hottabs">
+                            <span class="cur" idx="1">周排行</span><span idx="2">月排行</span><span idx="3">季排行</span>
+                        </div>
+                        <div id="div_hotlist">
+                            <ul idx="1" class="list_round">
+                                <li><i class="cur1"></i><a href="#" target="_blank">炒黄金如何利用相反理论？</a></li>
+                                <li><i class="cur2"></i><a href="#" target="_blank">炒黄金如何识破盘整？</a></li>
+                                <li><i class="cur3"></i><a href="#" target="_blank">炒黄金哪些方法可以减少亏损？</a></li>
+                                <li><i class="cur"></i><a href="#" target="_blank">炒黄金有哪些禁忌？</a></li>
+                                <li><i class="cur"></i><a href="#" target="_blank">炒黄金中如何管理仓位呢？</a></li>
+                                <li><i class="cur"></i><a href="#" target="_blank">炒黄金如何应对主动和被动性解套</a></li>
+                                <li><i class="cur"></i><a href="#" target="_blank">炒黄金有哪些止损陷阱？</a></li>
+                                <li><i class="cur"></i><a href="#" target="_blank">炒黄金遭遇成交密集区如何做单？</a></li>
+                                <li><i class="cur"></i><a href="#" target="_blank">炒黄金的风险率怎么计算</a></li>
+                                <li><i class="cur"></i><a href="#" target="_blank">炒黄金中有哪些发现缺口的方法？</a></li>
+                            </ul>
+                            <ul idx="2" class="list_round" style="display:none;">
+                                <li><i class="cur1"></i><a href="#" target="_blank">黄金期货交易四大解套方法</a></li>
+                                <li><i class="cur2"></i><a href="#" target="_blank">小资金也能玩转的炒黄金技巧</a></li>
+                                <li><i class="cur3"></i><a href="#" target="_blank">黄金T+D投资风险有哪些？</a></li>
+                                <li><i class="cur"></i><a href="#" target="_blank">黄金期货夜盘与日盘交易规则有何不同？</a></li>
+                                <li><i class="cur"></i><a href="#" target="_blank">纸黄金什么时候交易最佳？</a></li>
+                                <li><i class="cur"></i><a href="#" target="_blank">什么是黄金TD溢价？</a></li>
+                                <li><i class="cur"></i><a href="#" target="_blank">炒黄金如何看待技术分析？</a></li>
+                                <li><i class="cur"></i><a href="#" target="_blank">黄金期货和黄金期权有什么区别？</a></li>
+                                <li><i class="cur"></i><a href="#" target="_blank">炒黄金如何判断黄金走势？</a></li>
+                                <li><i class="cur"></i><a href="#" target="_blank">炒黄金如何利用相反理论？</a></li>
+                            </ul>
+                            <ul idx="3" class="list_round" style="display:none;">
+                                <li><i class="cur1"></i><a href="#" target="_blank">外汇基础知识之投资外汇亏损原因是什么？</a></li>
+                                <li><i class="cur2"></i><a href="#" target="_blank">外汇储备风险具备哪些特点？</a></li>
+                                <li><i class="cur3"></i><a href="#" target="_blank">外汇中交易 如何提高自己的执行力？</a></li>
+                                <li><i class="cur"></i><a href="#" target="_blank">外汇有哪些平仓技巧？</a></li>
+                                <li><i class="cur"></i><a href="#" target="_blank">外汇系统的特点有哪些？</a></li>
+                                <li><i class="cur"></i><a href="#" target="_blank">外汇常用术语是什么？</a></li>
+                                <li><i class="cur"></i><a href="#" target="_blank">外汇模拟盘的优缺点分别是什么？</a></li>
+                                <li><i class="cur"></i><a href="#" target="_blank">如何理解外汇交易系统?</a></li>
+                                <li><i class="cur"></i><a href="#" target="_blank">炒外汇耐心重要还是决心重要？</a></li>
+                                <li><i class="cur"></i><a href="#" target="_blank">外汇投资出现不良心态的原因是什么？</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ad_mt50"><a rel="nofollow" href="#" target="_blank"><img alt="广告" src="images/1200120-1.jpg"></a>
+        </div>
+        <div class="four">
+            <div class="four-title">
+                <h2>图说财经</h2>
+            </div>
+            <div class="four-box">
+                <a class="pic-item" href="#" target="_blank">
+                    <span class="shade"></span>
+                    <img src="images/8f3e7a201541fe88024dd7c365488c40.jpg" alt="摩根士丹利经济学家邢自强：中国城市化2.0将成经济发力点">
+                    <div class="title">
+                        <p>摩根士丹利经济学家邢自强：中国城市化2.0将成经济发力点</p>
+                    </div>
+                </a><a class="pic-item" href="#" target="_blank">
+                    <span class="shade"></span>
+                    <img src="images/859a6e79803dbc725fc6391ba8527dab.jpg" alt="人民日报署名文章：外贸发展有韧劲有后劲">
+                    <div class="title">
+                        <p>人民日报署名文章：外贸发展有韧劲有后劲</p>
+                    </div>
+                </a><a class="pic-item" href="#" target="_blank">
+                    <span class="shade"></span>
+                    <img src="images/4231cefb6d272bdedff038bfd9a60fea.jpg" alt="财政部最新数据显示：上半年国企利润同比增长7.2%">
+                    <div class="title">
+                        <p>财政部最新数据显示：上半年国企利润同比增长7.2%</p>
+                    </div>
+                </a><a class="pic-item" href="#" target="_blank">
+                    <span class="shade"></span>
+                    <img src="images/578792375100df095fb789d2cc94fb7b.jpg" alt="2019年上半年福建省进出口总值快速增长6.8%">
+                    <div class="title">
+                        <p>2019年上半年福建省进出口总值快速增长6.8%</p>
+                    </div>
+                </a><a class="pic-item" href="#" target="_blank">
+                    <span class="shade"></span>
+                    <img src="images/22d4ef0abb10a5e273d045c8dadb1235.jpg" alt="央行印发金融科技三年规划 2021年实现金融科技深度融合">
+                    <div class="title">
+                        <p>央行印发金融科技三年规划 2021年实现金融科技深度融合</p>
+                    </div>
+                </a><a class="pic-item" href="#" target="_blank">
+                    <span class="shade"></span>
+                    <img src="images/ca214ac27db252160f1c2a38fbf1ad8e.jpg" alt="比特币自去年10月26日以来首次回10000美元大关">
+                    <div class="title">
+                        <p>比特币自去年10月26日以来首次回10000美元大关</p>
+                    </div>
+                </a><a class="pic-item" href="#" target="_blank">
+                    <span class="shade"></span>
+                    <img src="images/d8f511f04b86b69d8a98fe0c518d958a.jpg" alt="中国金融改革开放跑出“新速度”">
+                    <div class="title">
+                        <p>中国金融改革开放跑出“新速度”</p>
+                    </div>
+                </a><a class="pic-item" href="#" target="_blank">
+                    <span class="shade"></span>
+                    <img src="images/5a26ce5f0a06226bae2bfc6e08cb84ce.jpg" alt="科创板为推行创业板注册制发挥试验田作用">
+                    <div class="title">
+                        <p>科创板为推行创业板注册制发挥试验田作用</p>
+                    </div>
+                </a> </div>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <div class="sitemap">
+            <div class="sitemap_box">
+                <div class="sitemap_con">
+                    <strong>财经</strong>
+                    <a href="#">国内经济</a><a href="#">国际经济</a><a href="#">财经点评</a><a href="#">宏观经济</a><a
+                        href="#">产业公司</a><a href="#">金融市场</a><a href="#">财经杂谈</a> </div>
+                <div class="sitemap_con">
+                    <strong>股票</strong>
+                    <a href="#">播报</a><a href="#">创业板</a><a href="#">个股</a><a href="#">美股</a><a href="#">港股</a><a
+                        href="#">新三板</a><a href="#">公告</a><a href="#">公司</a> </div>
+                <div class="sitemap_con">
+                    <strong>理财</strong>
+                    <a href="#">理财规划</a><a href="#">银行理财</a><a href="#">保险理财</a><a href="#">信托资讯</a><a
+                        href="#">债券理财</a><a href="#">收藏资讯</a><a href="#">互联网金融</a> </div>
+                <div class="sitemap_con">
+                    <strong>基金</strong>
+                    <a href="#">基金动态</a><a href="#">基金评论</a><a href="#">私募要闻</a><a href="#">业界人物</a><a href="#">基金持仓</a>
+                </div>
+                <div class="sitemap_con">
+                    <strong>外汇</strong>
+                    <a href="#">外汇快讯</a><a href="#">外汇观点</a><a href="#">外汇分析</a><a href="#">央行动态</a> </div>
+                <div class="sitemap_con">
+                    <strong>期货</strong>
+                    <a href="#">期货要闻</a><a href="#">期货机构</a><a href="#">期货名家</a><a href="#">期盘播报</a><a href="#">期市分析</a>
+                </div>
+                <div class="sitemap_con">
+                    <strong>黄金</strong>
+                    <a href="#">黄金资讯</a><a href="#">机构论金</a><a href="#">名家点金</a><a href="#">珠宝新闻</a> </div>
+                <div class="sitemap_con">
+                    <strong>房产</strong>
+                    <a href="#">地产投资</a><a href="#">房企动态</a><a href="#">楼市评论</a><a href="#">房产新政</a><a href="#">房市聚焦</a>
+                </div>
+                <div class="sitemap_con">
+                    <strong>投资</strong>
+                    <a href="#">原油</a><a href="#">沥青</a><a href="#">玉石</a><a href="#">白银</a><a href="#">邮币</a> </div>
+                <div class="sitemap_con">
+                    <strong>商业</strong>
+                    <a href="#">商业报道</a><a href="#">管理营销</a><a href="#">商业案例</a> </div>
+                <div class="sitemap_con">
+                    <strong>消费</strong>
+                    <a href="#">市场</a><a href="#">数码</a><a href="#">时尚</a><a href="#">健康</a><a href="#">汽车</a><a
+                        href="#">家电</a><a href="#">活动</a><a href="#">物价</a> </div>
+                <div class="sitemap_con">
+                    <strong>科技</strong>
+                    <a href="#">科技要闻</a><a href="#">通讯</a><a href="#">金融科技</a><a href="#">数码产品</a><a href="#">人工智能</a><a
+                        href="#">互联网</a><a href="#">区块链</a> </div>
+            </div>
+        </div>
+        <div class="links">
+            <div class="links_title"><em class="tit">友情链接 / 合作伙伴</em><em class="qq">合作QQ：3350437295</em></div>
+            <div class="links_box">
+                <a href="#" title="财经知识" target="_blank">财经知识</a>
+                <a href="#" title="金融宝宝1号" target="_blank">金融宝宝1号</a>
+                <a href="#" title="黄金投资" target="_blank">黄金投资</a>
+                <a href="#" title="保险超市" target="_blank">保险超市</a>
+                <a href="#" title="消费金融" target="_blank">消费金融</a>
+                <a href="#" title="确定财经" target="_blank">确定财经</a>
+                <a href="#" title="香港股票投资" target="_blank">香港股票投资</a>
+                <a href="#" title="炒股教程" target="_blank">炒股教程</a>
+                <a href="#" title="指股网" target="_blank">指股网</a>
+                <a href="#" title="黄金投资" target="_blank">黄金投资</a>
+                <a href="#" title="世链财经" target="_blank">世链财经</a>
+                <a href="#" title="电鳗快报" target="_blank">电鳗快报</a>
+                <a href="#" title="财经新闻" target="_blank">财经新闻</a>
+                <a href="#" title="全球股市" target="_blank">全球股市</a>
+                <a href="#" title="经济网" target="_blank">经济网</a>
+                <a href="#" title="优财金融网" target="_blank">优财金融网</a>
+                <a href="#" title="东方财经网" target="_blank">东方财经网</a>
+                <a href="#" title="618外汇网" target="_blank">618外汇网</a>
+                <a href="#" title="币币情" target="_blank">币币情</a>
+                <a href="#" title="股票配资" target="_blank">股票配资</a>
+                <a href="#" title="黑马财经" target="_blank">黑马财经</a>
+                <a href="#" title="链虎财经" target="_blank">链虎财经</a>
+                <a href="#" title="苹果期货" target="_blank">苹果期货</a>
+                <a href="#" title="51币说" target="_blank">51币说</a>
+                <a href="#" title="伦敦金网" target="_blank">伦敦金网</a>
+                <a href="#" title="比特币价格" target="_blank">比特币价格</a>
+                <a href="#" title="真牛财经" target="_blank">真牛财经</a>
+            </div>
+            <div class="cert"><img src="images/cert1.png" alt="ZB"><img src="images/cert2.png" alt="粤嘉基金"><img
+                    src="images/cert3.png" alt="极豆资本"><img src="images/cert4.png" alt="链商店"><img src="images/cert5.png"
+                    alt="Media Union"><img src="images/cert6.png" alt="区块链市场"><img src="images/cert7.png"
+                    alt="TOKOK"><img src="images/cert8.png" alt="一块硬币"></div>
+        </div>
+        <div class="bottom_nav">
+            <div class="bottom_nav_links">
+                <span class="bottom_nav_copyright">Copyright<em class="bottom_nav_copyright_icon">&copy;</em>2019-2020
+                    XXXX（XXXX.COM）</span>
+                <a href="http://www.beian.miit.gov.cn" rel="nofollow">ICP备案：沪ICP备1232333号-1</a> |
+                <a href="about.html" rel="nofollow">网站简介</a> |
+                <a href="lianxi.html" rel="nofollow">联系方法</a> |
+                <a href="zhaopin.html" rel="nofollow">招聘信息</a> |
+                <a href="fuwu.html " rel="nofollow">客户服务</a> |
+                <a href="yinsi.html" rel="nofollow">隐私政策</a> |
+                <a href="guanggao.html" rel="nofollow">广告服务</a> |
+                <a href="ditu.html" rel="nofollow">网站地图</a> |
+                <a href="yijian.html" rel="nofollow">意见反馈</a> |
+                <a href="jubao.html" rel="nofollow">不良信息举报</a> |
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.cookie.js" charset="utf-8"></script>
+    <script src="js/jquery.terseBanner.min.js" charset="utf-8"></script>
+    <script src="js/main.js" charset="utf-8"></script>
+    <script src="js/theia-sticky-sidebar.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/holder/2.9.7/holder.min.js"></script>
+</body>
+
+</html>
